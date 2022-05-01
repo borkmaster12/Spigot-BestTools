@@ -56,9 +56,15 @@ public class BestToolsListener implements Listener {
             // || (enemy instanceof Player && playerSetting.swordOnPlayers)
         ) return;
 
+        PlayerInventory inv = p.getInventory();
+
+        if(main.getConfig().getBoolean("dont-switch-during-battle") && handler.isWeapon(inv.getItemInMainHand())) {
+            main.debug("Return: It's a gun^^");
+            return;
+        }
+
         main.debug("Getting the best roscoe for "+enemy.getType().name());
 
-        PlayerInventory inv = p.getInventory();
         ItemStack bestRoscoe = handler.getBestRoscoeFromInventory(enemy.getType(), p,playerSetting.isHotbarOnly(),inv.getItemInMainHand(),useAxeAsWeapon);
 
         if(bestRoscoe==null || bestRoscoe.equals(inv.getItemInMainHand())) {
