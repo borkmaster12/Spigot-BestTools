@@ -18,7 +18,7 @@ import java.util.Objects;
 public class BestToolsUtils {
 
     final String[] wood = {"BIRCH", "ACACIA", "OAK", "DARK_OAK", "SPRUCE", "JUNGLE"}; // Crimson and Warped stems are not needed, this is only for old versions
-    final String[] weapons = {"BOW", "CROSSBOW", "TRIDENT", "NETHERITE_SWORD", "DIAMOND_SWORD", "GOLDEN_SWORD", "IRON_SWORD", "STONE_SWORD", "WOODEN_SWORD"};
+    final String[] weapons = {"BOW", "CROSSBOW", "TRIDENT", "NETHERITE_SWORD", "DIAMOND_SWORD", "GOLDEN_SWORD", "IRON_SWORD", "STONE_SWORD", "WOODEN_SWORD", "WOODEN_AXE", "STONE_AXE", "IRON_AXE", "GOLDEN_AXE", "DIAMOND_AXE", "NETHERITE_AXE"};
     final String[] instaBreakableByHand = {"COMPARATOR", "REPEATER", "REDSTONE_WIRE", "REDSTONE_TORCH", "REDSTONE_WALL_TORCH", "TORCH", "SOUL_TORCH", "WALL_TORCH", "SOUL_WALL_TORCH",
             "SCAFFOLDING", "SLIME_BLOCK", "HONEY_BLOCK", "TNT", "TRIPWIRE", "TRIPWIRE_HOOK", "GRASS", "SUGAR_CANE", "LILY_PAD",
             "OAK_SAPLING", "SPRUCE_SAPLING", "BIRCH_SAPLING", "JUNGLE_SAPLING", "ACACIA_SAPLING", "DARK_OAK_SAPLING",
